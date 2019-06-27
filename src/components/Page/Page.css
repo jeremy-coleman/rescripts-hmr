@@ -1,0 +1,59 @@
+.Page .PageTitle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: absolute;
+    left: 300px;
+    right: 0;
+    top: 0;
+  z-index: 1;
+}
+
+.Page .MainSection {
+  top: 110px;
+}
+
+.Page .MainSection > * {
+  max-width: 850px;
+}
+
+.Page blockquote {
+  background: #f3f8ff;
+  color: #1e4475;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 40px 0;
+  padding: 40px;
+  text-align: center;
+}
+
+.Page ol,
+.Page ul,
+.Page p {
+  color: #6f7986;
+  margin: 20px 0;
+}
+
+.Page li {
+  margin: 0 0 10px 40px;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .ToggleNav {
+    display: block;
+    height: 30px;
+    position: fixed;
+      left: 20px;
+      top: 20px;
+    width: 30px;
+    z-index: 100;
+  }
+
+  .Page .PageTitle {
+    display: block;
+    padding: 100px 0 0 0;
+    position: static;
+  }
+}

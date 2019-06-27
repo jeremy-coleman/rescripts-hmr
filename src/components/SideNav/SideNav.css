@@ -1,0 +1,78 @@
+.SideNav {
+  background: #f9f9f9;
+  box-shadow: inset -5px 0 30px rgba(0,0,0,.02);
+  overflow-y: auto;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  width: 300px;
+}
+
+.SideNav .Logo {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.SideNav a {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.SideNav a:hover,
+.SideNav a.-Active {
+  background: #eee;
+}
+
+.SideNav a.-Active {
+  font-weight: 600;
+}
+
+.SideNav a.-Deprecated {
+  text-decoration: line-through;
+}
+
+.SideNav a svg {
+  margin: 0 5px -5px 0;
+}
+
+.SideNav a svg.Right {
+  color: #cad1da;
+  float: right;
+}
+
+.SideNav ul ul a {
+  opacity: .7;
+  padding: 10px 20px 10px 40px;
+}
+
+.SideNav .ToggleNav {
+  display: none;
+}
+
+.Page .SideNav ul {
+  margin: 0;
+}
+
+.Page .SideNav li {
+  list-style: none;
+  margin: 0;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .SideNav {
+    position: fixed;
+      bottom: 0;
+      left: -300px;
+      top: 0;
+    transition: left .1s ease-in-out;
+    z-index: 1;
+  }
+
+  .SideNav.-Open {
+    left: 0;
+  }
+}

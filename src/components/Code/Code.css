@@ -1,0 +1,182 @@
+.Code {
+  background: #f9f9f9;
+  padding: 40px;
+  position: relative;
+}
+
+.Code .Filename {
+  color: #8f949c;
+  padding: 10px 20px;
+  position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Code .Filename a {
+  background: #998;
+  border-radius: 4px;
+  color: #fdfdf6;
+  margin: -3px -2px -3px 7px;
+  padding: 3px 2px 3px 6px;
+  text-decoration: none;
+}
+
+.Code .Filename a:hover {
+  background: #888879;
+}
+
+.Code .Filename svg {
+  height: 20px;
+  margin-bottom: -2px;
+}
+
+.Code .CodeBlock code,
+.Code .CodeBlock input {
+  background: transparent;
+  font: 18px/26px 'Fira Code', Menlo, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+  white-space: pre;
+  -webkit-appearance: none;
+}
+
+.Code .Missing {
+  color: #b0b7c1;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.Code .MissingSub a {
+  color: #d5dbe4;
+  display: block;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 64px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .Code {
+    overflow: auto;
+  }
+}
+
+/**
+* GHColors theme by Avi Aryan (http://aviaryan.in)
+* Inspired by Github syntax coloring
+* From https://github.com/PrismJS/prism-themes/blob/master/themes/prism-ghcolors.css
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #393A34;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.95em;
+  line-height: 1.2em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #b3d4fc;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  background-color: white;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  background: #f8f8f8;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999988; font-style: italic;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.string,
+.token.attr-value {
+  color: #e3116c;
+}
+.token.punctuation,
+.token.operator {
+  color: #393A34; /* no highlight */
+}
+
+.token.entity,
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.property,
+.token.regex,
+.token.inserted {
+  color: #36acaa;
+}
+
+.token.atrule,
+.token.attr-name,
+.language-autohotkey .token.selector {
+  color: #00a4db;
+}
+
+.token.keyword {
+  font-weight: 700;
+}
+
+.token.deleted,
+.language-autohotkey .token.tag {
+  color: #9a050f;
+}
+
+.token.tag,
+.token.selector,
+.language-autohotkey .token.keyword {
+  color: #00009f;
+}
+
+.token.important,
+.token.function,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "using-babel-and-eslint-configs",
+  "version": "0.0.13",
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "serve":"serve build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "feather-icons": "^4.22.1",
+    "highlight.js": "^9.15.8",
+    "react-feather": "^1.1.6",
+    "rxjs": "^6.5.2",
+    "undux": "^5.0.0-beta.22",
+    "@hot-loader/react-dom": "16.8.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.11.1",
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.2",
+    "styled-normalize": "^8.0.6"
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.10",
+    "@rescripts/rescript-use-babel-config": "^0.0.8",
+    "@rescripts/rescript-use-eslint-config": "^0.0.9",
+    "@rescripts/rescript-use-stylelint-config": "^0.0.4",
+    "@types/node": "^12.0.10",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-react-require": "^3.1.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "typescript": "3.5.2",
+    "@css-blocks/webpack": "^0.23.0",
+    "@mdx-js/loader": "^1.0.21",
+    "@types/feather-icons": "^4.7.0",
+    "gh-pages": "^2.0.1",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
+    "remark-highlight.js": "^5.1.1",
+    "react-app-rewired":"2.1.3"
+  }
+}

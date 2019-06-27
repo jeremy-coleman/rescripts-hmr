@@ -1,0 +1,6 @@
+.InlineCode {
+  background: #f9f9f9;
+  font-family: 'Fira Code', Menlo, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+  padding: 0 6px;
+  white-space: pre;
+}
